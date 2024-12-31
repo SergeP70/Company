@@ -25,7 +25,7 @@ with open('data.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         with cols[col_index]:
-            st.subheader((row['first name'] + " " + row['last name']))
+            st.subheader(f"{row['first name'].title()} {row['last name'].title()}")
             st.write(row['role'])
             st.image("images/" + row['image'])
             col_index += 1
