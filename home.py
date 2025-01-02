@@ -3,10 +3,6 @@ import csv
 
 st.set_page_config(layout="wide")
 
-with st.sidebar:
-    st.write(":page_facing_up:  Home")
-    st.write(":page_facing_up:  Contact us")
-
 st.title("The Best Company")
 content_title = """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis fringilla sapien nec imperdiet. 
