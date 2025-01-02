@@ -7,7 +7,6 @@ st.header("Contact Page", divider="gray")
 with open("topics.csv", "r") as file:
     csv_reader = csv.DictReader(file)
     lst_topics = [row['topic'] for row in csv_reader]
-    print(lst_topics)
 
 with st.form("frm_mail"):
     txt_email = st.text_input("Your Email Address")
